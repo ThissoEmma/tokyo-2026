@@ -154,6 +154,24 @@ h2 {
 }
 .map-button:hover { color: var(--green); background: var(--white); }
 
+.booking {
+  width: 100%;
+  max-width: none;
+  display: grid;
+  grid-template-columns: .7fr 1.3fr;
+  gap: 80px;
+  padding: 100px max(24px, calc((100% - var(--max))/2));
+  background: #e6e2d8;
+}
+.booking-lead { max-width: 260px; margin-top: 20px; color: var(--muted); line-height: 1.7; }
+.booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.booking-card { min-height: 190px; padding: 24px; background: var(--paper); }
+.booking-card.urgent { border-top: 3px solid var(--red); }
+.booking-status { display: inline-block; margin-bottom: 24px; color: var(--red); font-size: 11px; font-weight: 600; letter-spacing: 1px; }
+.booking-card h3 { margin: 0 0 10px; font-size: 18px; line-height: 1.45; }
+.booking-card p { margin: 0; color: #4f504b; line-height: 1.7; }
+.booking-card small { display: block; margin-top: 12px; color: var(--muted); line-height: 1.6; }
+
 .section-heading {
   display: flex;
   align-items: end;
@@ -305,6 +323,8 @@ footer {
   .scroll-cue { display: none; }
   .section { padding: 72px 0; }
   .weather, .checklist { grid-template-columns: 1fr; gap: 40px; }
+  .booking { grid-template-columns: 1fr; gap: 40px; padding: 72px 20px; }
+  .booking-grid { grid-template-columns: 1fr; }
   .stay { padding: 64px 20px; }
   .stay-layout { display: grid; }
   .map-button { width: 100%; }
